@@ -1,0 +1,46 @@
+{#<h1 class="section-title center">Conciertos</h1>
+
+<p style="text-align: center">Por el momento no contamos con una fecha exacta de nuestro próximo concierto.</p>
+<p style="text-align: center">Sigan visitándonos para tener las últimas novedades.</p>
+#}
+
+
+<div class="container">
+
+    <div class="row">
+        <div id="concerts-info" class="col-sm-12">
+            <h1 class="section-title center">Conciertos</h1>
+
+            <div id="counter-info">
+                <div class="featured">
+                    <div class="icon"><i class="icon-calendar"></i></div>
+                    <h3>Próximo Concierto</h3>
+                </div>
+
+                <div class="ccounter">
+                    <div class="counter"><input class="knob days" data-readOnly="true" data-width="85" data-height="85" data-displayPrevious=true data-fgColor="#ebad64" data-skin="beat" data-thickness=".15" data-min="0" data-max="365" value="75" /><span>DIAS</span></div>
+                    <div class="counter"><input class="knob hour" data-readOnly="true" data-width="85" data-height="85" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#ebad64" data-skin="beat" data-thickness=".15" value="75" /><span>HORAS</span></div>
+                    <div class="counter"><input class="knob minute" data-readOnly="true" data-width="85" data-height="85" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#ebad64" data-skin="beat" data-thickness=".15" value="75" /><span>MIN.</span></div>
+                    <div class="counter"><input class="knob second" data-readOnly="true" data-width="85" data-height="85" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#ebad64" data-skin="beat" data-thickness=".15" value="75" /><span>SEC.</span></div>
+                </div>
+
+                <div class="date col-sm-12"></div> <!-- This div will be automatic populated with the upcoming concert date -->
+                <div class="location col-sm-12"></div> <!-- This div will be automatic populated with the upcoming concert address -->
+            </div>
+
+            <div class="buttons-area col-sm-12">
+                <!-- a href="#" class="btn btn-default btn-icon"><i class="icon-tags"></i><span>Buy Tickets !</span></a -->
+                <a href="" id="seeLocation" class="btn btn-dark btn-icon"><i class="icon-map-marker"></i><span>Ver Lugar</span></a><br/>
+                <button id="complete-list-btn" class="btn btn-dark2">Ver Lista Completa de Conciertos</button>
+            </div>
+
+            <div id="complete-list">
+                <i class="icon-remove-circle close-complete-list"></i>
+                <div id="list"></div><!-- This div will be automatic populated with the complete list of concerts -->
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="map_canvas"></div>
